@@ -1,0 +1,46 @@
+{
+  "name": "selectel-cloud-functions",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/types",
+  "bin": {
+    "scf": "bin/run.js"
+  },
+  "scripts": {
+    "clean:js": "rm -fr build",
+    "build:js": "npm run clean:js && tsc",
+    "build": "npm run build:js"
+  },
+  "files": [
+    "bin",
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/outbreak/selectel-cloud-functions.git"
+  },
+  "keywords": [
+    "selectel",
+    "cloud",
+    "functions",
+    "cli"
+  ],
+  "author": "Dmitry Dudin <dima.dudin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/outbreak/selectel-cloud-functions/issues"
+  },
+  "homepage": "https://github.com/outbreak/selectel-cloud-functions",
+  "devDependencies": {
+    "@szmarczak/http-timer": "4.0.5",
+    "@types/node": "14.14.39",
+    "@types/yargs": "16.0.1",
+    "typescript": "4.2.4"
+  },
+  "dependencies": {
+    "form-data": "4.0.0",
+    "got": "11.8.2",
+    "yargs": "16.2.0"
+  }
+}
